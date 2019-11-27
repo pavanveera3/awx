@@ -1,7 +1,8 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
+- hosts: all
+  gather_facts: true
+  tasks:     
+  # Read a file
+  - name: Display file content (/etc/redhat-release).........
+    shell: cat /etc/redhat-release
+    register: OSrelease_result
+  - debug: msg="{{ OSrelease_result.stdout_lines }}"

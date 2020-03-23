@@ -6,3 +6,5 @@
     shell: cat /etc/redhat-release
     register: OSrelease_result
   - debug: msg="{{ OSrelease_result.stdout_lines }}"
+  
+  

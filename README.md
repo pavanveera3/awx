@@ -1,2 +1,2 @@
 # ansible-tower-samples
-Ansible Tower Playbook Samples yes
+Ansible Tower Playbook Samples yes yes
